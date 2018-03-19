@@ -1,0 +1,22 @@
+<ion-view view-title="{{chat.name}}" hide-back-button="true">
+
+  <ion-nav-buttons side="left">
+    <a ng-click="myGoBack()" class="button button-icon icon ion-ios-arrow-back"></a>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon button-clear icon chat-option button-small" ng-click="showActionSheet()"></button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <ion-scroll zooming="true" direction="y" style="height: 81vh">
+      <div
+        style="height: auto; background: url('https://upload.wikimedia.org/wikipedia/commons/a/ad/Europe_geological_map-en.jpg') repeat"></div>
+    </ion-scroll>
+    <div class="list">
+      <label class="item item-input">
+        <textarea rows="4" placeholder="Comments"></textarea>
+      </label>
+    </div>
+  </ion-content>
+</ion-view>

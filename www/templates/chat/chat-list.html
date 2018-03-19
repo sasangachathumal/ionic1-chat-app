@@ -1,0 +1,17 @@
+<ion-view view-title="Practera Chat App">
+
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon button-clear icon ion-compose button-small"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding">
+    <ion-list>
+      <ion-item class="item-avatar item-text-wrap " ng-repeat="item in items" href="#/chat-view/{{item.id}}">
+        <img ng-src="{{item.image}}" src="http://bdfjade.com/data/out/75/5807300-avatar-images.png">
+        <h2>{{item.name}}</h2>
+        <p>{{item.lastText}}<span class="item-note">10.20 PM</span></p>
+        <span class="badge badge-assertive">5</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
