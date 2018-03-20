@@ -32,7 +32,19 @@ angular.module('practeraChat', ['ionic', 'practeraChat.controller', 'practeraCha
 
       .state('chat-view', {
         url: '/chat-view/:chatId',
-        templateUrl: 'templates/message/message-view.html',
+        templateUrl: 'templates/chat/message-view.html',
+        controller: 'messageCtrl'
+      })
+
+      .state('group-chat-view', {
+        url: '/group-chat-view/:chatId',
+        templateUrl: 'templates/group/message-view.html',
+        controller: 'messageCtrl'
+      })
+
+      .state('group-info-view', {
+        url: '/group-chat-info',
+        templateUrl: 'templates/group/info-view.html',
         controller: 'messageCtrl'
       })
 

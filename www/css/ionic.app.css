@@ -126,7 +126,7 @@ $dark:                            #444 !default;
 .ion-android-options:before,
 .ion-android-people:before,
 .ion-android-person:before,
-.ion-android-person-add:before,
+.ion-android-person-add:before, .platform-android .add-people:before,
 .ion-android-phone-landscape:before,
 .ion-android-phone-portrait:before,
 .ion-android-pin:before,
@@ -474,7 +474,7 @@ $dark:                            #444 !default;
 .ion-ios-people-outline:before,
 .ion-ios-person:before,
 .ion-ios-person-outline:before,
-.ion-ios-personadd:before,
+.ion-ios-personadd:before, .platform-ios .add-people:before,
 .ion-ios-personadd-outline:before,
 .ion-ios-photos:before,
 .ion-ios-photos-outline:before,
@@ -594,7 +594,7 @@ $dark:                            #444 !default;
 .ion-minus-round:before,
 .ion-model-s:before,
 .ion-monitor:before,
-.ion-more:before, .chat-option:before,
+.ion-more:before, .chat-option:before, .add-people:before,
 .ion-mouse:before,
 .ion-music-note:before,
 .ion-navicon:before,
@@ -1145,7 +1145,7 @@ $dark:                            #444 !default;
   content: "";
 }
 
-.ion-android-person-add:before {
+.ion-android-person-add:before, .platform-android .add-people:before {
   content: "";
 }
 
@@ -2537,7 +2537,7 @@ $dark:                            #444 !default;
   content: "";
 }
 
-.ion-ios-personadd:before {
+.ion-ios-personadd:before, .platform-ios .add-people:before {
   content: "";
 }
 
@@ -3017,7 +3017,7 @@ $dark:                            #444 !default;
   content: "";
 }
 
-.ion-more:before, .chat-option:before {
+.ion-more:before, .chat-option:before, .add-people:before {
   content: "";
 }
 
@@ -4827,7 +4827,7 @@ a.subdued:last-child {
 }
 
 .bar.bar-clear {
-  border: none;
+    border: none;
   background: none;
   color: #fff;
 }
@@ -4854,7 +4854,7 @@ a.subdued:last-child {
 .bar.bar-light {
   border-color: #ddd;
   background-color: white;
-  background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+    background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
   color: #444;
 }
 
@@ -6843,11 +6843,9 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
     min-height: 240px;
     width: 60%;
   }
-
   .modal.ng-leave-active {
     bottom: 0;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) {
     height: 44px;
   }
@@ -6855,36 +6853,29 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) > * {
     margin-top: 0;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs-top > .tabs,
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs.tabs-top {
     top: 44px;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header,
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-subheader {
     top: 44px;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .has-subheader {
     top: 88px;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-tabs-top {
     top: 93px;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-subheader.has-tabs-top {
     top: 137px;
   }
-
   .modal-backdrop-bg {
     -webkit-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
     background-color: #000;
     opacity: 0;
   }
-
   .active .modal-backdrop-bg {
     opacity: 0.5;
   }
@@ -12307,7 +12298,6 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   .item .badge {
     right: calc(constant(safe-area-inset-right) + 32px);
   }
-
   .item-icon-left {
     padding-left: calc(constant(safe-area-inset-left) + 54px);
   }
@@ -12315,7 +12305,6 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   .item-icon-left .icon {
     left: calc(constant(safe-area-inset-left) + 11px);
   }
-
   .item-icon-right {
     padding-right: calc(constant(safe-area-inset-right) + 54px);
   }
@@ -12323,7 +12312,6 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   .item-icon-right .icon {
     right: calc(constant(safe-area-inset-right) + 11px);
   }
-
   .item-complex, a.item.item-complex, button.item.item-complex {
     padding: 0;
   }
@@ -12331,23 +12319,19 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   .item-complex .item-content, a.item.item-complex .item-content, button.item.item-complex .item-content {
     padding: 16px calc(constant(safe-area-inset-right) + 49px) 16px calc(constant(safe-area-inset-left) + 16px);
   }
-
   .item-left-edit.visible.active {
     -webkit-transform: translate3d(calc(constant(safe-area-inset-left) + 8px), 0, 0);
     transform: translate3d(calc(constant(safe-area-inset-left) + 8px), 0, 0);
   }
-
   .list-left-editing .item-left-editable .item-content,
   .item-left-editing.item-left-editable .item-content {
     -webkit-transform: translate3d(calc(constant(safe-area-inset-left) + 50px), 0, 0);
     transform: translate3d(calc(constant(safe-area-inset-left) + 50px), 0, 0);
   }
-
   .item-right-edit {
     right: constant(safe-area-inset-right);
     right: env(safe-area-inset-right);
   }
-
   .platform-ios.platform-browser.platform-ipad {
     position: fixed;
   }
