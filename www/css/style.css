@@ -1,1 +1,82 @@
 /* Empty. Add your own CSS if you like */
+
+.profile-image, .profile-view, .edit-profile {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.profile-image img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.edit-profile img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  -webkit-filter: blur(2px) grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: blur(2px) grayscale(50%);
+}
+
+.profile-view img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+
+/*.profile-view button .button-icon .icon:before {*/
+/*font-size: 24px !important;*/
+/*}*/
+
+.profile-view .button {
+  background-color: white !important;
+  color: #6ebdd3 !important;
+  border: 1px solid #6ebdd3 !important;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-button .button-icon .icon:before {
+  font-size: 24px !important;
+}
+
+.profile-image label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: xx-large;
+}
+
+.profile-image h5, .profile-view h5, .edit-profile h5 {
+  color: gray;
+}
+
+.edit-profile label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5px;
+  transform: translate(-50%, -50%);
+  color: gray;
+  font-size: xx-large;
+}
+
+.practera-forms .item {
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.practera-forms .item {
+  padding-left: 0;
+}

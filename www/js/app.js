@@ -36,6 +36,21 @@ angular.module('practeraChat', ['ionic', 'practeraChat.controller', 'practeraCha
         controller: 'messageCtrl'
       })
 
+      .state('login', {
+        url: '/login',
+        templateUrl: 'templates/signin.html'
+      })
+
+      .state('signup', {
+        url: '/signup',
+        templateUrl: 'templates/signup.html'
+      })
+
+      .state('profileEdit', {
+        url: '/profileEdit',
+        templateUrl: 'templates/profile/profile-edit.html',
+        controller: 'profileCtrl'
+      })
       // setup an abstract state for the tabs directive
       .state('nav', {
         url: '/nav',
@@ -60,6 +75,15 @@ angular.module('practeraChat', ['ionic', 'practeraChat.controller', 'practeraCha
           'tab-group': {
             templateUrl: 'templates/group/group-list.html',
             controller: 'groupListCtrl'
+          }
+        }
+      })
+      .state('nav.profile', {
+        url: '/profile',
+        views: {
+          'tab-profile': {
+            templateUrl: 'templates/profile/profile-view.html',
+            controller: 'profileCtrl'
           }
         }
       });
