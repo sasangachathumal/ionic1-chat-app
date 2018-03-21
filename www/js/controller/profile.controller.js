@@ -21,7 +21,7 @@ angular.module('practeraChat.profileCtrl', [])
           {text: 'Cancel'},
           {
             text: 'Submit',
-            type: 'button-calm',
+            type: 'button-clear button-calm',
             onTap: function (e) {
               if (!$scope.data.wifi) {
                 //don't allow the user to close unless he enters wifi password

@@ -5,5 +5,6 @@ angular.module('practeraChat.controller', [
   'practeraChat.chatListCtrl',
   'practeraChat.groupListCtrl',
   'practeraChat.messageCtrl',
-  'practeraChat.profileCtrl'
+  'practeraChat.profileCtrl',
+  'practeraChat.contactListCtrl'
 ]);

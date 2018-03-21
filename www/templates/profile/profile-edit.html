@@ -5,31 +5,34 @@
   </ion-nav-buttons>
 
   <ion-nav-buttons side="secondary">
-    <button class="button button-clear button-small" ng-click="forgetPassword()">save</button>
+    <button class="button button-clear button-small" ng-click="forgetPassword()">Save</button>
   </ion-nav-buttons>
 
   <ion-content class="padding">
     <div class="edit-profile">
       <img align="center"
            src="https://exelord.com/ember-initials/images/default-d5f51047d8bd6327ec4a74361a7aae7f.jpg">
-      <label class="icon ion-camera"></label>
+      <a class="profile-button button icon ion-camera button-calm button-small"></a>
     </div>
     <div class="list practera-forms">
-      <label class="item item-input">
-        <input type="text" placeholder="First Name">
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">First Name</span>
+        <input type="text" placeholder="John">
       </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Last Name">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Last Name</span>
+        <input type="text" placeholder="Suhr">
       </label>
-      <label class="item item-input">
-        <input type="email" placeholder="Email">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input type="text" placeholder="john@suhr.com">
       </label>
     </div>
-    <div class="list card">
-      <a ng-click="forgetPassword()" class="item item-icon-left">
-        <i class="icon ion-key"></i>
+    <div class="list">
+      <button ng-click="forgetPassword()" class="item button icon ion-locked button-block button-calm">
         Change Password
-      </a>
+      </button>
     </div>
   </ion-content>
 

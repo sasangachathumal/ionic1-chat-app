@@ -5,17 +5,25 @@
   </ion-nav-buttons>
 
   <ion-nav-buttons side="secondary">
-    <button class="button button-icon button-clear icon chat-option button-small" ng-click="openPopover()"></button>
+    <button class="button button-icon button-clear icon chat-option button-small"
+            ng-click="openPopover($event)"></button>
   </ion-nav-buttons>
 
   <ion-content>
     <ion-list class="list">
+      <li class="item item-text-wrap chat-list chat-time-cell">
+        <p class="text-center">
+          <small>10.00 PM</small>
+        </p>
+      </li>
       <li class="item item-avatar-left item-text-wrap chat-list">
         <img src="https://exelord.com/ember-initials/images/default-d5f51047d8bd6327ec4a74361a7aae7f.jpg" alt=""/>
         <div class="bubbleLeft">
           <p>Hello</p>
         </div>
-        <p>
+      </li>
+      <li class="item item-text-wrap chat-list chat-time-cell">
+        <p class="text-center">
           <small>10.20 PM</small>
         </p>
       </li>
@@ -24,17 +32,16 @@
         <div class="bubbleLeft">
           <p>Hello</p>
         </div>
-        <p>
-          <small>10.20 PM</small>
+      </li>
+      <li class="item item-text-wrap chat-list chat-time-cell">
+        <p class="text-center">
+          <small>10.25 PM</small>
         </p>
       </li>
       <li class="item item-text-wrap item-right chat-list">
         <div class="bubbleRight">
-          <p>Hello</p>
+          <p style="color: white">Hello</p>
         </div>
-        <p class="chat-time-right">
-          <small>10.20 PM</small>
-        </p>
       </li>
     </ion-list>
   </ion-content>
@@ -44,7 +51,7 @@
       <i class="icon ion-android-chat placeholder-icon"></i>
       <input type="text" placeholder="Type your message..." required/>
     </label>
-    <button class="button icon ion-android-send"></button>
+    <button class="button icon message-send"></button>
     <!-- </form>-->
   </div>
 </ion-view>

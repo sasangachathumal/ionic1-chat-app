@@ -36,6 +36,12 @@ angular.module('practeraChat', ['ionic', 'practeraChat.controller', 'practeraCha
         controller: 'messageCtrl'
       })
 
+      .state('contact-list', {
+        url: '/contact-list/:viewName',
+        templateUrl: 'templates/contact/contact-list.html',
+        controller: 'contactListCtrl'
+      })
+
       .state('group-chat-view', {
         url: '/group-chat-view/:chatId',
         templateUrl: 'templates/group/message-view.html',
