@@ -3,9 +3,7 @@
  */
 angular.module('practeraChat.profileCtrl', [])
 
-  .controller('profileCtrl', function ($scope, Chats, $ionicHistory, $ionicActionSheet, $ionicPopup) {
-    $scope.items = Chats.all();
-
+  .controller('profileCtrl', function ($scope, $ionicHistory, $ionicActionSheet, $ionicPopup) {
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };

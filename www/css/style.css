@@ -31,10 +31,6 @@
   box-shadow: 1px 1px 5px gray;
 }
 
-/*.profile-view button .button-icon .icon:before {*/
-/*font-size: 24px !important;*/
-/*}*/
-
 .profile-view .button {
   background-color: white !important;
   color: #6ebdd3 !important;
@@ -48,6 +44,10 @@
 
 .profile-button .button-icon .icon:before {
   font-size: 24px !important;
+}
+
+.profile-button .icon:before {
+  font-size: 32px !important;
 }
 
 .profile-image label {
@@ -65,9 +65,11 @@
 }
 
 .edit-profile .button {
-  background-color: white !important;
+  /*padding: 15px 18px 15px 18px;*/
+  /*background: white !important; !* For browsers that do not support gradients *!*/
+  background: radial-gradient(#e0e0e0, white, gray); /* Standard syntax (must be last) */
   color: #6ebdd3 !important;
-  border: 1px solid #6ebdd3 !important;
+  border: 3px solid #6ebdd3 !important;
   border-radius: 50%;
   position: absolute;
   top: 85%;
@@ -95,23 +97,8 @@
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  /*box-shadow: -2px 2px 2px 0 rgba(178, 178, 178, .4);*/
   width: fit-content;
 }
-
-/*.bubbleLeft:after {*/
-/*content: '';*/
-/*position: absolute;*/
-/*border-style: solid;*/
-/*border-width: 7px 10px 7px 0;*/
-/*border-color: transparent #e0e0e0;*/
-/*display: block;*/
-/*z-index: 1;*/
-/*margin-top: -7px;*/
-/*!*right: -20px;*!*/
-/*right: 100%;*/
-/*top: 20px;*/
-/*}*/
 
 .bubbleRight {
   color: white !important;
@@ -124,25 +111,9 @@
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  /*box-shadow: -2px 2px 2px 0 rgba(178, 178, 178, .4);*/
   width: fit-content !important;
   float: right !important;
 }
-
-/*.bubbleRight:after {*/
-/*content: '';*/
-/*color: white;*/
-/*position: absolute;*/
-/*border-style: solid;*/
-/*border-width: 7px 0 7px 10px;*/
-/*border-color: transparent #6ebdd3;*/
-/*display: block;*/
-/*width: 0;*/
-/*z-index: 1;*/
-/*margin-top: -7px;*/
-/*right: -10px;*/
-/*top: 20px;*/
-/*}*/
 
 .chat-list {
   border: none !important;
@@ -220,6 +191,11 @@
   color: #6ebdd3 !important;
 }
 
+.button-bar > .button {
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+}
+
 ion-popover-view.fit {
   height: auto !important;
 }
@@ -246,4 +222,17 @@ ion-popover-view.fit ion-content {
   font-size: 24px !important;
   line-height: 24px !important;
   min-height: 25px !important;
+}
+
+.helpdesk h6 {
+  margin: 0 !important;
+}
+
+.helpdesk-item {
+  border-bottom: 1px solid #e0e0e0 !important;
+  border-top: none !important;
+}
+
+.hrlpdesk-remove-left-padding {
+  padding-left: 0px !important;
 }

@@ -3,8 +3,10 @@
  */
 angular.module('practeraChat.messageCtrl', [])
 
-  .controller('messageCtrl', function ($scope, $stateParams, Chats, $ionicHistory, $ionicPopup, $ionicPopover) {
-    $scope.chat = Chats.get($stateParams.chatId);
+  .controller('messageCtrl', function ($scope, $location, $ionicHistory, $ionicPopup, $ionicPopover) {
+
+    $scope.chatType = $location.search()['type'].toString();
+    $scope.chatType = $scope.chatType.replace(/'/g, '');
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();

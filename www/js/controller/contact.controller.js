@@ -3,9 +3,7 @@
  */
 angular.module('practeraChat.contactListCtrl', [])
 
-  .controller('contactListCtrl', function ($scope, Chats, $stateParams, $ionicHistory) {
-    $scope.items = Chats.all();
-
+  .controller('contactListCtrl', function ($scope, $stateParams, $ionicHistory) {
     $scope.view = $stateParams.viewName;
 
     $scope.myGoBack = function () {
